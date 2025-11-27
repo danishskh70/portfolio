@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danish Shaikh | Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="nav-container">
+      <div class="nav-logo">
+        <h2>Danish Shaikh</h2>
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="resume.pdf" class="btn-outline">Resume</a>
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="hero-greeting">Hi, I'm</span>
+          <span class="hero-name">Danish Shaikh</span>
+        </h1>
+        <p class="hero-subtitle">Full Stack Developer & Software Engineer</p>
+        <p class="hero-description">
+          I build exceptional digital experiences focused on performance, accessibility, 
+          and clean code. Currently specializing in Java, React.js, and AI-integrated applications.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Hackathons</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="window-header">
+            <div class="window-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span class="window-title">profile.js</span>
+          </div>
+          <div class="code-content">
+            <pre><code>const developer = {
+  name: "Danish Shaikh",
+  role: "Full Stack Developer",
+  skills: ["Java", "React", "Node.js"],
+  location: "Maharashtra, India",
+  education: "B.E. IT @ SPPU",
+  status: "Building amazing things"
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Software Engineering graduate with strong expertise in Java, Object-Oriented Programming, 
+              and full-stack development. Passionate about building AI-integrated applications and 
+              scalable systems that solve real-world problems.
+            </p>
+            <p>
+              My journey in tech started with curiosity about how things work, and has evolved into 
+              a passion for creating efficient, user-friendly applications. I thrive on challenges 
+              and continuously strive to learn and improve my skills.
+            </p>
+          </div>
+          
+          <div class="experience-timeline">
+            <h3>Experience & Education</h3>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h4>Full Stack Java Developer</h4>
+                <span class="timeline-company">Symbiosis Skills & Professional University</span>
+                <span class="timeline-date">Dec 2024 – May 2025</span>
+                <p>Developed voicemail systems and enhanced backend API integrations</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h4>Full Stack Development Intern</h4>
+                <span class="timeline-company">Sumago InfoTech</span>
+                <span class="timeline-date">Dec 2023 – Jan 2024</span>
+                <p>Built AI Interview Mocker with speech-to-text and Google Gemini AI integration</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h4>B.E. Information Technology</h4>
+                <span class="timeline-company">Savitribai Phule Pune University</span>
+                <span class="timeline-date">2021 – 2025 | CGPA: 8.36/10</span>
+                <p>Specialized in software engineering and web technologies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">🏆</div>
+            <h4>Hackathon Achievements</h4>
+            <p>Runner-Up at PICT Hackathon & Galactic Problem Solver at NASA Space Apps</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🚀</div>
+            <h4>Projects Built</h4>
+            <p>20+ projects including AI applications, authentication systems, and full-stack platforms</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">📚</div>
+            <h4>Continuous Learning</h4>
+            <p>NPTEL Java Certification and ongoing skill development in modern technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="fullstack,ai">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/danishskh70/AiInterviewMocker" class="project-link">Code</a>
+                <a href="#" class="project-link live">Live Demo</a>
+              </div>
+            </div>
+            <div class="project-badge">Featured</div>
+            <div class="image-placeholder">AI Interview Platform</div>
+          </div>
+          <div class="project-content">
+            <h3>AI Interview Mocker</h3>
+            <p>Full-stack AI interview simulator with real-time evaluation using Google Gemini AI and speech-to-text integration.</p>
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>PostgreSQL</span>
+              <span>Google AI</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="fullstack">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/danishskh70/Voicemail-System" class="project-link">Code</a>
+                <a href="#" class="project-link live">Live Demo</a>
+              </div>
+            </div>
+            <div class="image-placeholder">Voicemail System</div>
+          </div>
+          <div class="project-content">
+            <h3>Voicemail System</h3>
+            <p>Advanced voicemail system with SMS/email notifications using Twilio API and MongoDB.</p>
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Twilio API</span>
+              <span>Express.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="fullstack,web">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/danishskh70/SecureAuth" class="project-link">Code</a>
+                <a href="#" class="project-link live">Live Demo</a>
+              </div>
+            </div>
+            <div class="image-placeholder">SecureAuth</div>
+          </div>
+          <div class="project-content">
+            <h3>SecureAuth System</h3>
+            <p>Password-less authentication system with magic links and secure session management.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>JWT</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/danishskh70/StudentManagementSystem" class="project-link">Code</a>
+                <a href="#" class="project-link live">Live Demo</a>
+              </div>
+            </div>
+            <div class="image-placeholder">Student Management</div>
+          </div>
+          <div class="project-content">
+            <h3>Student Management System</h3>
+            <p>Java console application managing student records with MySQL database and CRUD operations.</p>
+            <div class="project-tech">
+              <span>Java</span>
+              <span>MySQL</span>
+              <span>JDBC</span>
+              <span>OOP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">React.js</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML5/CSS3</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Responsive Design</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend & Tools</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">REST APIs</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's work together</h3>
+          <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:danishshk70@gmail.com">danishshk70@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+917447312114">+91-7447312114</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Location</h4>
+                <span>Ambikhalsa, Maharashtra, 422620</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://linkedin.com/in/danish-shaikh-262016265" class="social-link">
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/danishskh70" class="social-link">
+              <span>GitHub</span>
+            </a>
+            <a href="resume.pdf" class="social-link">
+              <span>Resume</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <h3>Danish Shaikh</h3>
+          <p>Full Stack Developer & Software Engineer</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Danish Shaikh. Built with pure HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
