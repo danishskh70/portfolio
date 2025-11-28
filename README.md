@@ -15,8 +15,8 @@ This repository hosts the **static portfolio** of Danish Shaikh, showcasing:
 
 ## Deployment
 
-- Hosted on GitHub Pages: https://yourusername.github.io/portfolio
-
+- Hosted on Vercel : https://portfolio-opal-nine-q1gl6pz95n.vercel.app/
+ 
 ## License
 
 - All content © 2025 Danish Shaikh
